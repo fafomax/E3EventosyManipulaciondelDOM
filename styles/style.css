@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+body {
+    font-family: 'Akshar', sans-serif;
+}
+
+
+.texto {
+    text-align: center;
+    font-size: 2em;
+}
+
+.inputs {
+    margin-left: 6em;
+    width: 40em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs label {
+    text-align: center;
+    font-size: 2em;
+}
+
+.inputs button {
+   margin-top: 1em;
+}
