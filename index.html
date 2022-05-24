@@ -1,12 +1,3 @@
-<!-- Vamos a utilizar el mismo array de objetos "Pizzas🍕" del desafío general anterior. 
-
-👉 Crear un archivo HTML que contenga un h2, un h4, un input number y un botón. 
-
-👉 El desafío será, al tocar el botón, capturar el valor ingresado en el input.
-👉 Renderizar en el h2 el nombre y en el h4 el precio de la pizza cuyo id coincida con el numero ingresado en el input. 
-
-🚨 Si no coincide con ningún id, renderizar un mensaje de error. -->
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,10 +12,13 @@
 
 <body>
     <div class="inputs">
-        <label for="number">Ingrese un Numero del 1 al 6</label>
-        <input type="number" name="" id="inputNumber">
-
-        <button onclick="subPalabras()" id="button">Preguntar</button>
+        <form action="">
+            <label for="inputNumber">Ingrese un Numero del 1 al 6</label>
+            <input type="number" name="" id="inputNumber">
+            <input type="submit" value="Enviar">
+              
+        </form>
+        
     </div>
 
     <div class="texto">
