@@ -5,30 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzas🍕</title>
     <link rel="stylesheet" href="./styles/normalice.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <title>Pizzas🍕</title>
 </head>
 
 <body>
-    <div class="inputs">
-        <form action="">
-            <label for="inputNumber">Ingrese un Numero del 1 al 6</label>
-            <input type="number" name="" id="inputNumber">
-            <input type="submit" value="Enviar">
-
-        </form>
-
-    </div>
-
-    <div class="texto">
-        <h2 id="nombrePizza"></h2>
-
-        <h4 id="precioPizza"></h4>
-    </div>
-
-    <div>
-        <span id="error"></span>
+    <div class="container">
+        <div class="title-container">
+            <h1>Ingrese un Numero del 1 al 6</h1>
+        </div>
+        <div class="formulario">
+            <input type="number" id="numberFilter">
+            <button id="boton">Buscar</button>
+        </div>
+        <div class="text-container">
+            <h2 id="nombrePizza"></h2>
+            <h4 id="precioPizza"></h4>
+            <h4 id="error"></h4>
+        </div>
     </div>
 
     <script src="./apps/app.js"></script>

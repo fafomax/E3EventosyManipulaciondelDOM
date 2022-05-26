@@ -1,3 +1,8 @@
+const boton = document.getElementById("boton");
+const tituloPizza = document.getElementById("nombrePizza");
+const precioPizza = document.getElementById("precioPizza");
+const error1 = document.getElementById("error");
+const inputNum = document.getElementById("numberFilter");
 const pizzas = [
   {
     id: 1,
@@ -37,27 +42,19 @@ const pizzas = [
   },
 ];
 
-const form = document.querySelector("body > div.inputs > form");
-const input = document.querySelector("#inputNumber");
-
-form.addEventListener("submit", (e) => {
-  console.log("Formulario enviado");
-  const resultado = input.value;
-  buscadorPizzas(resultado);
-});
-
-const buscadorPizzas = (resultado) => {
-  pizzas.map((pizza) => {
-    const { nombre, precio } = pizza;
-    const h2 = document.querySelector("#nombrePizza");
-    const h4 = document.querySelector("#precioPizza");
-
-    if (resultado == pizza.id) {
-      h2.textContent = "Nombre: " + nombre + " ";
-      h4.textContent = "Precio: " + precio + " ";
-    } else {
-      h2.textContent = "Articulo no encontrado ";
-      h4.textContent = "prueba con un numero del 1 al 6 ";
+function buscadorPizzas() {
+  const value1 = parseInt(inputNum.value);
+  pizzas.forEach((pizzas) => {
+    if (value1 === pizzas.id) {
+      tituloPizza.innerHTML = pizzas.nombre;
+      precioPizza.innerHTML = "$" + pizzas.precio;
+      error1.innerHTML = "";
+    } else if (value1 > 5) {
+      error1.innerHTML = "Articulo no encontrado ";
+      tituloPizza.innerHTML = "";
+      precioPizza.innerHTML = "";
     }
   });
-};
+}
+
+boton.addEventListener("click", buscadorPizzas);
