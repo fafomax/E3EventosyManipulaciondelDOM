@@ -42,3 +42,20 @@ body {
     text-shadow: rgb(99, 11, 11) 1px 0 10px;
 
 }
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    width: 120em;
+    height: 3em;
+    color: #fca88d;
+    text-align: center;
+    background-color: #974030;
+    text-shadow: 1px 1px 2px black;
+}
+
+footer a {
+    color: #fca88d;
+    text-decoration: none;
+    text-shadow: rgb(99, 11, 11) 1px 0 10px;
+}
